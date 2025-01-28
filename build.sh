@@ -2,5 +2,5 @@
 make clean ; \
 ./autogen.sh && \
 ./nomacro.pl && \
-./configure CFLAGS="-O3" && \
-make
+./configure CFLAGS="-Ofast -Wall" && \
+make -j $(nproc)
